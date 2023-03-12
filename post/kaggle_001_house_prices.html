@@ -129,54 +129,56 @@
                 <br>
             </div>
             
-            <pre class = "line-numbers language-python">
-                <code>
-                    import tensorflow as tf
-                    import matplotlib.pyplot as plt
-                    from keras.models import Sequential
-                    from keras.layers import Dense, Dropout, BatchNormalization
+            <div style = "font-size: 0.9vw;">
+                <pre class = "line-numbers language-python">
+                    <code>
+                        import tensorflow as tf
+                        import matplotlib.pyplot as plt
+                        from keras.models import Sequential
+                        from keras.layers import Dense, Dropout, BatchNormalization
 
-                    ### Set up daat
-                    train_x = train_df_processing[feature_slect.drop(['SalePrice'], axis = 1).columns]
-                    train_y = train_df_processing['SalePrice']
-                    valid_x = validation_df_processing[feature_slect.drop(['SalePrice'], axis = 1).columns]
-                    valid_y = validation_df_processing["SalePrice"]
+                        ### Set up daat
+                        train_x = train_df_processing[feature_slect.drop(['SalePrice'], axis = 1).columns]
+                        train_y = train_df_processing['SalePrice']
+                        valid_x = validation_df_processing[feature_slect.drop(['SalePrice'], axis = 1).columns]
+                        valid_y = validation_df_processing["SalePrice"]
 
-                    ### Model Build
-                    tf.debugging.set_log_device_placement(True)
-                    model = Sequential()
-                    model.add(Dense(256, input_shape=(train_x.shape[1],), activation="gelu"))
-                    model.add(Dropout(0.025))
-                    model.add(Dense(64, activation="gelu"))
-                    model.add(Dropout(0.025))
-                    model.add(Dense(32, activation="gelu"))
-                    model.add(Dropout(0.025))
-                    model.add(Dense(1))
+                        ### Model Build
+                        tf.debugging.set_log_device_placement(True)
+                        model = Sequential()
+                        model.add(Dense(256, input_shape=(train_x.shape[1],), activation="gelu"))
+                        model.add(Dropout(0.025))
+                        model.add(Dense(64, activation="gelu"))
+                        model.add(Dropout(0.025))
+                        model.add(Dense(32, activation="gelu"))
+                        model.add(Dropout(0.025))
+                        model.add(Dense(1))
 
-                    ### Parameters setting
-                    optimize = tf.keras.optimizers.Nadam()
-                    model.compile(loss = "mae", optimizer = optimize, metrics=["mae"])
+                        ### Parameters setting
+                        optimize = tf.keras.optimizers.Nadam()
+                        model.compile(loss = "mae", optimizer = optimize, metrics=["mae"])
 
-                    ### Training
-                    callback1 = tf.keras.callbacks.EarlyStopping(monitor = 'val_loss', patience = 500)
-                    model.fit(train_x, train_y, epochs = 4000, batch_size = 64, verbose = False, validation_data = (valid_x, valid_y), callbacks=[callback1])
+                        ### Training
+                        callback1 = tf.keras.callbacks.EarlyStopping(monitor = 'val_loss', patience = 500)
+                        model.fit(train_x, train_y, epochs = 4000, batch_size = 64, verbose = False, validation_data = (valid_x, valid_y), callbacks=[callback1])
 
-                    ### Evaluate
-                    ## Plot
-                    train_loss = model.history.history["loss"]
-                    valid_loss = model.history.history["val_loss"]
-                    plt.figure(dpi = 200)
-                    plt.plot(range(len(train_loss)), train_loss, label="train loss")
-                    plt.plot(range(len(valid_loss)), valid_loss, label="valid loss")
-                    plt.legend()
-                    plt.xlabel("Epoch")
-                    plt.ylabel("mae")
-                    plt.show()
+                        ### Evaluate
+                        ## Plot
+                        train_loss = model.history.history["loss"]
+                        valid_loss = model.history.history["val_loss"]
+                        plt.figure(dpi = 200)
+                        plt.plot(range(len(train_loss)), train_loss, label="train loss")
+                        plt.plot(range(len(valid_loss)), valid_loss, label="valid loss")
+                        plt.legend()
+                        plt.xlabel("Epoch")
+                        plt.ylabel("mae")
+                        plt.show()
 
-                    print("Train Loss : ", train_loss[-1])
-                    print("Valid Loss : ", valid_loss[-1])
-                </code>
-            </pre>
+                        print("Train Loss : ", train_loss[-1])
+                        print("Valid Loss : ", valid_loss[-1])
+                    </code>
+                </pre>
+            </div>
         </div>
     </div>
 
