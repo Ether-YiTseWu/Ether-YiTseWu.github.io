@@ -75,6 +75,7 @@
         <div class = "col-6 bg-white p-4 text-left">
             <div class = "fs-5" style = "text-align:justify;">
                 <span style = "font-size: 27px;">"K</span>aggle : House Prices<span style = "font-size: 27px;">"</span> is an online competition for everbody getting started prediction problems.
+                The goal is to predict the hose prices based on the features like the house size, pool quality, and year sold.
                 Because the competition is popular, there are many resources on Internet from enthusiastic netizens.
                 Therefore, it's very suitable for the people who study data science and machine learning.
                 In this article, I also share my solution to the Kaggle competition for increasing the positive self-learning community.
@@ -82,6 +83,12 @@
             <br>
             <div class = "fs-5" style = "text-align:justify;">
                 <span style = "font-size: 27px;">F</span>irstly, I would introduce my data preprocessing methods. 
+                As the following figure shows, my preprocessing methods are consist of three parts, "NaN", "Category", and "Outlier".
+                In the "NaN" part, I drop out the features whose NaN rate is higher than 10%.
+                Then, I replace the NaN data with -1.
+                In the "Category" part, I use one-hot encoding to make category features computable.
+                In the "Outlier" part, I plot box figures to observe the features outlier condition for removing the extreme outliers.
+                After the above processing, I start to build the model to predict the house prices.
                 <br>
                 <br>
                 <div style = "text-align:center;">
@@ -90,7 +97,11 @@
             </div>
             <br>
             <div class = "fs-5" style = "text-align:justify;">
-                <span style = "font-size: 27px;">S</span>econdly, I would introduce my model architecture. 
+                <span style = "font-size: 27px;">A</span>s the following figure shows, it's my model architecture. 
+                The model is consist of three hidden layers.
+                The hidden layers number is 256, 64, 32 seperately.
+                As for the optimizer and activation function, I use "Nadam" and "gelu" to make the training process faster and stabler simultaneously.
+                In addition, through the Dropout technique, I decrease the overfitting for acquiring a better score.
                 <br>
                 <br>
                 <div style = "text-align:center;">
