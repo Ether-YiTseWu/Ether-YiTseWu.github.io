@@ -107,6 +107,29 @@
                 </div>
             </div>
             <br>
+            <div style = "text-align:justify; font-size: 0.9vw;">
+                <span style = "font-size: 1.5vw;">I</span>n the "Extract" part, I observe although the origin correlation coefficient of "SibSp" and "Survival" is lower that zero point one, we can use extraction method to combine a better feature.
+                Through the observation from the scatter plot below, I extract a new feature named "SibSpParch" whose correlation coefficient is higher than zero point one.
+                The extraction formula of "SibSpParch" as the program shows.
+                <br>
+                <br>
+                <div style = "text-align:center;">
+                    <img src="/images/kaggle_02_SibSpParch.jpg" alt="Kaggle Pipeline" style = "max-width:100%; height:auto;">
+                </div>
+                <br>
+                <div style = "font-size: 0.9vw;">
+                    <pre class = "line-numbers language-python">
+                        <code>
+                            train_df_processing['SibSpParch'] = [int(i) for i in list((train_df_processing['SibSp'] >= 3) | (train_df_processing['Parch'] >= 4))]
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <br>
+            <div style = "text-align:justify; font-size: 0.9vw;">
+                <span style = "font-size: 1.5vw;">I</span>n the "Model" and "Evaluate" part, I 
+            </div>
+            <br>
         </div>
     </div>
 
