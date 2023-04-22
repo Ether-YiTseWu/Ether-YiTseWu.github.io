@@ -108,9 +108,10 @@
             </div>
             <br>
             <div style = "text-align:justify; font-size: 0.9vw;">
-                <span style = "font-size: 1.5vw;">I</span>n the "Extract" part, I observe although the origin correlation coefficient of "SibSp" and "Survival" is lower that zero point one, we can use extraction method to combine a better feature.
-                Through the observation from the scatter plot below, I extract a new feature named "SibSpParch" whose correlation coefficient is higher than zero point one.
-                The extraction formula of "SibSpParch" as the program shows.
+                <span style = "font-size: 1.5vw;">I</span>n the "Extract" part, I observe although the origin correlation coefficient of "SibSp" and "Survival" is lower than zero point one, we can use our data science brain to generate a better feature based on the "SibSp".
+                Look at the following picture, we can observe thera is a specific relationship between "SibSp", "Parch", and "Survival". 
+                Therefore, I acquire a new feature named "SibSpParch" whose correlation coefficient is higher than original value, zero point one.
+                The extraction program of "SibSpParch" is simple as the following program shows.
                 <br>
                 <br>
                 <div style = "text-align:center;">
@@ -256,6 +257,7 @@
 
                                 print("F1 SCore :", train_f1/10, valid_f1/10, ", AUC :",train_auc/10, valid_auc/10, ", Mean epochs length :", epo_len/10)
                                 print()
+
                             print("End")
                         </code>
                     </pre>
