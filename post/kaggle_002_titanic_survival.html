@@ -88,6 +88,25 @@
                 In this article, I also share my solution to the Kaggle competition for increasing the positive self-learning community.
             </div>
             <br>
+            <div style = "text-align:justify; font-size: 0.9vw;">
+                <span style = "font-size: 1.5vw;">F</span>irstly, I would introduce my processing pipeline. 
+                As the following figure shows, the pipeline is consist of six parts, "NaN", "Category", "Extract", "Normalize", "Model", and "Evaluate".
+                In the "NaN" part, I drop out a feature named cabin whose NaN rate is too high.
+                Then, I replace the NaN data with median.
+                In the "Category" part, I use one-hot encoding to make category features computable.
+                In the "Extract" part, I plot two scatter figures to observe the relationship between two different features.
+                In the "Normalize" part, I nomalize the all data, and make the numerical interval of every data between 0 to 1 for decreasing the importance of "sex" feature. 
+                In the "Model" part, I utilize NN and grid search methods to classify a person is survived or not.
+                In the "Evaluate" part, I evaluate the goodness of model according to cross validation technique.
+                The six parts indicate a rough image for you. 
+                Therefore, in order to let you have a better sense of my soluition, I would introduce the three parts, "Extract", "Model", and "Evaluate" in detail.
+                <br>
+                <br>
+                <div style = "text-align:center;">
+                    <img src="/images/kaggle_02_pipeline.jpg" alt="Kaggle Pipeline" style = "max-width:100%; height:auto;">
+                </div>
+            </div>
+            <br>
         </div>
     </div>
 
