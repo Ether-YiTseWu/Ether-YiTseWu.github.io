@@ -132,7 +132,7 @@
                 <div style = "font-size: 0.9vw;">
                     <pre class = "line-numbers language-python">
                         <code>
-                            for stop_patience in [100, 200, 300, 400, 500]:
+                            for stop_patience in [100, 200, 300, 400, 500]:               
                                 df = pd.read_csv("./train.csv")
                                 df = df.drop('Cabin', axis = 1)
                                 kf = KFold(n_splits = 10, shuffle = True, random_state = 42)
