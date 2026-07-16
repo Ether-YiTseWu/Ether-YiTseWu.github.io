@@ -62,3 +62,13 @@ https://ether-yitsewu.github.io/
 
 - The profile image was cropped from the supplied screenshot. Replace `assets/images/profile.webp` with a higher-resolution original when available.
 - For a custom domain, add a `CNAME` file containing the domain name.
+
+## 圖片連結
+
+`img.7z` 的三張原始圖片已直接複製到 `assets/images/`，網站使用下列固定路徑：
+
+- `assets/images/geographic-photo-contest-2026.png`
+- `assets/images/data-innovation-award-2023.jpg`
+- `assets/images/geographic-photo-work.jpg`
+
+完整對照可查看 `assets/images/image-manifest.json`。請將 `index.html` 與整個 `assets` 資料夾一起放在 GitHub Repository 根目錄，不要只上傳 HTML。

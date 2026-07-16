@@ -296,3 +296,13 @@ button { font: inherit; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Deployment diagnostic: shown only when an image path is invalid. */
+.image-load-error {
+  min-height: 180px;
+  padding: 24px;
+  object-fit: contain !important;
+  background: repeating-linear-gradient(135deg, #f4f5f6, #f4f5f6 12px, #e7eaed 12px, #e7eaed 24px);
+  color: #8b1e2d;
+  font-size: .85rem;
+}

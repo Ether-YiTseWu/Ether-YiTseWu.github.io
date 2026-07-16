@@ -28,9 +28,9 @@ window.PORTFOLIO_DATA = {
       result: "First Runner-Up",
       resultZh: "第一副優勝／亞軍",
       description: "以地理景觀與街道文化為觀察核心，作品在 2026 Asia International Geographic Photo Contest 獲得 First Runner-Up。",
-      certificate: "assets/images/award-photo-2026.webp",
+      certificate: "assets/images/geographic-photo-contest-2026.png",
       certificateAlt: "2026 Asia International Geographic Photo Contest First Runner-Up 獎狀",
-      featuredImage: "assets/images/photo-contest-work.webp",
+      featuredImage: "assets/images/geographic-photo-work.jpg",
       featuredAlt: "攝影競賽參賽作品：雨中的日本街景與牆面貼紙",
       tags: ["Photography", "Geography", "Street"]
     },
@@ -42,7 +42,7 @@ window.PORTFOLIO_DATA = {
       result: "銅獎",
       resultZh: "生活氣象多元應用組",
       description: "團隊「TTA 愛」參加 2023 資料創新應用競賽，在生活氣象多元應用組獲得銅獎。",
-      certificate: "assets/images/award-data-2023.webp",
+      certificate: "assets/images/data-innovation-award-2023.jpg",
       certificateAlt: "2023 資料創新應用競賽銅獎獎狀",
       tags: ["Open Data", "Weather", "Teamwork"]
     }
@@ -66,7 +66,7 @@ window.PORTFOLIO_DATA = {
     {
       title: "Urban Layers",
       subtitle: "2026 Photography Award Selection",
-      image: "assets/images/photo-contest-work.webp",
+      image: "assets/images/geographic-photo-work.jpg",
       alt: "雨中的日本街道，左側牆面布滿貼紙，右側為市場入口",
       year: "2026"
     }

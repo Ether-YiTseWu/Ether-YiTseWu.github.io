@@ -14,6 +14,16 @@
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 
+  // Resolve every local asset from the current page URL.
+  // This keeps image links working on GitHub Pages and during local preview.
+  const assetUrl = (path = "") => {
+    try {
+      return new URL(path, document.baseURI).href;
+    } catch {
+      return path;
+    }
+  };
+
   // Content
   $("[data-hero-intro]").textContent = data.profile.heroIntro;
   $("[data-about-primary]").textContent = data.profile.aboutPrimary;
@@ -37,10 +47,10 @@
     .map((award, index) => `
       <article class="award-card reveal" style="--delay:${index * 90}ms">
         <button class="award-image image-button" type="button"
-          data-lightbox-src="${escapeHtml(award.certificate)}"
+          data-lightbox-src="${escapeHtml(assetUrl(award.certificate))}"
           data-lightbox-alt="${escapeHtml(award.certificateAlt)}"
           data-lightbox-caption="${escapeHtml(`${award.year} · ${award.title} · ${award.result}`)}">
-          <img src="${escapeHtml(award.certificate)}" alt="${escapeHtml(award.certificateAlt)}" loading="lazy">
+          <img src="${escapeHtml(assetUrl(award.certificate))}" alt="${escapeHtml(award.certificateAlt)}" loading="lazy">
           <span class="image-hint">View certificate</span>
         </button>
         <div class="award-body">
@@ -90,10 +100,10 @@
     .map((item) => `
       <figure class="gallery-item reveal">
         <button class="image-button" type="button"
-          data-lightbox-src="${escapeHtml(item.image)}"
+          data-lightbox-src="${escapeHtml(assetUrl(item.image))}"
           data-lightbox-alt="${escapeHtml(item.alt)}"
           data-lightbox-caption="${escapeHtml(`${item.title} · ${item.year}`)}">
-          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.alt)}" loading="lazy">
+          <img src="${escapeHtml(assetUrl(item.image))}" alt="${escapeHtml(item.alt)}" loading="lazy">
         </button>
         <figcaption>
           <div><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.subtitle)}</span></div>
@@ -102,6 +112,16 @@
       </figure>
     `)
     .join("");
+
+
+  // Make broken asset paths visible during deployment checks.
+  document.addEventListener("error", (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement)) return;
+    image.classList.add("image-load-error");
+    image.alt = `圖片載入失敗：${image.getAttribute("src") || "unknown path"}`;
+    console.error("Image failed to load:", image.src);
+  }, true);
 
   // Theme
   const root = document.documentElement;
