@@ -1,130 +1,160 @@
 <!doctype html>
-
+<html lang="zh-Hant">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG2Z224XZ6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-KG2Z224XZ6');
-    </script>
-    <meta name="google-site-verification" content="Ql3h9a7FWrkphYKX-yT592Jf6HSDyIj04aFeDpDdOKA" />
-
-    <meta charset="utf-8">
-    <title>Yi-Tse Wu 吳乙澤</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='icon' href="/icons/favicon.ico">
-
-    <meta name = "description" content = "Ether wu (吳乙澤) personal page">
-    <meta name = "keywords" content = "吳乙澤, Ether Wu">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <style>
-        .p1
-        {
-            font-family: "Microsoft JhengHei";
-            font-weight: bold;
-        }
-        .p2
-        { 
-            border-bottom:0.3vw #48b9d9 solid; padding-bottom:0.2vw;
-        }
-        .p3
-        { 
-            border-bottom:0.1vw #9aa4a7 solid; padding-bottom:0.2vw;
-        }
-        .box 
-        {
-            display: flex;
-            flex-flow: column;
-            height: 100vh;
-        }
-        .imgRemain
-        {
-            flex-grow:4;
-        }
-        .bottomRemain
-        {
-            flex-grow:1;
-        }
-        body 
-        {
-            background-color: #f4f8f8;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yi-Tse Wu（Ether）的個人作品網站，收錄軟體工程、攝影競賽、資料創新競賽與專利成果。">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yi-Tse Wu (Ether) — Portfolio">
+  <meta property="og:description" content="Software Engineer · Photographer · Inventor">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Yi-Tse Wu (Ether) — Portfolio</title>
+  <link rel="icon" href="assets/images/profile.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site-data.js"></script>
+  <script defer src="assets/js/app.js"></script>
 </head>
-
 <body>
-    <div class = "box">
-        <div class = "d-flex flex-row container-fluid mt-4">
-            <a class = "text-decoration-none link-dark mb-1" href="https://ether-yitsewu.github.io/" style = "margin-right: auto;"> 
-                <h3> &nbsp; &nbsp; Home </h3>
-            </a>
-            <a class = "text-decoration-none link-dark mt-2" href="/about.html">
-                    <h5> About &nbsp; &nbsp; &nbsp; &nbsp; </h5>
-            </a>
-            <a class = "text-decoration-none link-dark mt-2" href="/post/post.html">
-                <h5> Post &nbsp; &nbsp; &nbsp; &nbsp; </h5>
-            </a>
-            <a class = "text-decoration-none link-dark mt-2" href="/contact.html">
-                <h5> Contact &nbsp; &nbsp; &nbsp; &nbsp; </h5>
-            </a>
-        </div>
+  <a class="skip-link" href="#main">跳到主要內容</a>
 
-        <hr/>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark">EW</span>
+        <span class="brand-text">Ether Wu</span>
+      </a>
 
-        <div class = "row imgRemain align-items-center">
-            <div class = "col-3"></div>
-            <div class = "col-6">
-                <center><img src = "/images/self.jpg" class = "rounded-circle" style = "width: 50%;"></center>
-                <div class = "text-center" data-aos="fade-in">
-                    <br><br>
-                    <div style = "font-size: 3vw;"> Yi-Tse Wu (Ether) </div>
-                    <br>
-                    <div style = "font-size: 1.5vw;">
-                        I'm a <span class="typed p2" data-typed-items="Software Engineer, Personal Tutor, Maker, Researcher"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <button class="menu-button" type="button" aria-label="開啟導覽選單" aria-expanded="false" data-menu-button>
+        <span></span><span></span><span></span>
+      </button>
 
-        <hr/>
+      <nav class="site-nav" aria-label="主要導覽" data-nav>
+        <a href="#about">About</a>
+        <a href="#awards">Awards</a>
+        <a href="#patents">Patent</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-        <div class = "d-flex justify-content-center align-items-center BottomRemain pb-3">
-            <div class = "fw-lighter fs-6">
-                <small>
-                    © 2023 
-                    <a href=https://ether-yitsewu.github.io/ class = "text-decoration-none link-dark p3"> Yi-Tse Wu 吳乙澤</a>
-                     All Rights Reserved 
-                    &nbsp; &nbsp; &nbsp; &nbsp; 
-                    Powerd by 
-                    <a href=https://getbootstrap.com/docs/5.3/getting-started/download/ class = "text-decoration-none link-dark p3"> Bootstrap</a>
-                    ,
-                    <a href=https://github.com/michalsnik/aos class = "text-decoration-none link-dark p3"> AOS</a>
-                    ,
-                    <a href=https://www.hitwebcounter.com/ class = "text-decoration-none link-dark p3"> hitwebcounter</a>
-                    &
-                    <a href="https://www.google.com.tw/intl/zh-TW/forms/about/" class = "text-decoration-none link-dark p3"> Google Forms </a>
-                </small>
-            </div>
-            &nbsp; &nbsp; &nbsp; &nbsp; 
-            <a href="https://www.hitwebcounter.com" target="_blank">
-            <img src="https://hitwebcounter.com/counter/counter.php?page=8308749&style=0008&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter"/></a>                                                              
-        </div>
-        
+      <button class="theme-button" type="button" aria-label="切換深色或淺色模式" data-theme-button>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
     </div>
+  </header>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/iPortfolio_1.js"></script>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PORTFOLIO · TAIWAN</p>
+          <h1>Yi-Tse Wu <span>(Ether)</span></h1>
+          <p class="hero-role">Software Engineer · Photographer · Inventor</p>
+          <p class="hero-intro" data-hero-intro></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#awards">查看成果</a>
+            <a class="button button-secondary" href="https://github.com/ether-yitsewu" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-metrics" data-metrics></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-shell">
+            <div class="portrait-ring"></div>
+            <img src="assets/images/profile.webp" alt="Yi-Tse Wu 的個人照片" width="555" height="555">
+            <div class="portrait-badge">
+              <span class="status-dot"></span>
+              Building reliable systems
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="向下瀏覽">
+        <span>SCROLL</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ABOUT</p>
+          <h2>工程思維，<br>跨域創作。</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p data-about-primary></p>
+          <p data-about-secondary></p>
+          <div class="skill-list" data-skills></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="awards">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow">AWARDS & RECOGNITION</p>
+            <h2>競賽成果</h2>
+          </div>
+          <p>攝影、人文觀察與資料應用，呈現工程之外的另一種解題方式。</p>
+        </div>
+        <div class="award-grid" data-awards></div>
+      </div>
+    </section>
+
+    <section class="section" id="patents">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow">PATENT</p>
+            <h2>專利成果</h2>
+          </div>
+          <p>將感測、控制與即時警示整合成可落地的監控系統。</p>
+        </div>
+        <div class="patent-list" data-patents></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="gallery">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>攝影作品</h2>
+          </div>
+          <p>在街道、城市與地景之間，記錄秩序、文化與偶然交會的瞬間。</p>
+        </div>
+        <div class="gallery-grid" data-gallery></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>持續創作，也持續解題。</h2>
+          <p>歡迎透過 GitHub 查看作品與後續更新。</p>
+        </div>
+        <a class="button button-light" href="https://github.com/ether-yitsewu" target="_blank" rel="noopener noreferrer">前往 GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span data-year></span> Yi-Tse Wu. All rights reserved.</p>
+      <p>Designed for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox>
+    <button type="button" class="lightbox-close" aria-label="關閉圖片" data-lightbox-close>×</button>
+    <img src="" alt="" data-lightbox-image>
+    <p data-lightbox-caption></p>
+  </dialog>
 </body>
-
 </html>
