@@ -26,6 +26,11 @@ const siteData = {
             image: "assets/images/geographic-photo-work.jpg"
         },
         {
+            title: "Go Home, It's slightly Raining",
+            category: "Humanities",
+            image: "assets/images/watch-window.JPEG"
+        },
+        {
             title: "Tower and People",
             category: "Street",
             image: "assets/images/tsutenkaku-tower.jpg"
