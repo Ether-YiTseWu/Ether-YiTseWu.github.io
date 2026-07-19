@@ -26,9 +26,9 @@ const siteData = {
             image: "assets/images/geographic-photo-work.jpg"
         },
         {
-            title: "Go Home. It's slightly Raining",
-            category: "Humanities",
-            image: "assets/images/watch-window.JPEG"
+            title: "Revisit Old Haunts",
+            category: "Landscape",
+            image: "assets/images/revisit-old-haunts.JPEG"
         },
         {
             title: "Ship wave cut the sea",
