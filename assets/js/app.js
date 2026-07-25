@@ -121,21 +121,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // 渲染攝影集 (Gallery)
-            if(galleryContainer && siteData.gallery) {
+            if (galleryContainer && siteData.gallery) {
                 siteData.gallery.forEach(item => {
                     const card = document.createElement('div');
                     card.className = 'card';
+
                     card.innerHTML = `
-                        <div class="card-img" style="background: #2a3b52; background-image: url('${item.image}'); background-size: cover; background-position: center;"></div>
+                        <div
+                            class="card-img"
+                            style="
+                                background: #2a3b52;
+                                background-image: url('${item.image}');
+                                background-size: cover;
+                                background-position: center;
+                            ">
+                        </div>
+
                         <div class="card-content">
                             <span class="card-date">${item.category}</span>
                             <h3 class="card-title">${item.title}</h3>
+
+                            ${
+                                item.device
+                                    ? `<div class="card-device">
+                                        <span class="device-label"></span>
+                                        <span class="device-name">${item.device}</span>
+                                    </div>`
+                                    : ''
+                            }
                         </div>
                     `;
 
-                    // 綁定點擊事件開啟燈箱 (攝影集預設沒有長描述，帶入空字串)
                     card.addEventListener('click', () => {
-                        openLightbox(item.image, item.title, item.category, '');
+                        openLightbox(
+                            item.image,
+                            item.title,
+                            item.category,
+                            '',
+                            item.device || ''
+                        );
                     });
 
                     galleryContainer.appendChild(card);

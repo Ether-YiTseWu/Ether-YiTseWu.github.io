@@ -9,7 +9,7 @@ const siteData = {
         {
             title: "資料創新應用競賽",
             date: "2023",
-            description: "榮獲 2023 資料創新應用競賽銅獎，表彰在數據分析與創新應用的卓越貢獻",
+            description: "榮獲 2023 資料創新應用競賽銅獎，表彰在數據分析與創新應用的卓越表現",
             image: "assets/images/data-innovation-award-2023.jpg"
         },
         {
@@ -23,17 +23,32 @@ const siteData = {
         {
             title: "Hip-Hop Meets Modernity, Stillness Meets Motion",
             category: "Street",
-            image: "assets/images/geographic-photo-work.jpg"
+            image: "assets/images/geographic-photo-work.jpg",
+            device: "(Insta360 Luna Ultra)"
         },
         {
             title: "Revisit Old Haunts",
             category: "Landscape",
-            image: "assets/images/revisit-old-haunts.JPEG"
+            image: "assets/images/revisit-old-haunts.JPEG",
+            device: "(Insta360 Luna Ultra)"
         },
         {
             title: "Ship wave cut the sea",
             category: "Landscape",
-            image: "assets/images/sea.jpg"
+            image: "assets/images/sea.jpg",
+            device: "(Apple IPhone 16)"
+        },
+        {
+            title: "Passing train",     
+            category: "Street",
+            image: "assets/images/train.JPG",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Taiwanese Style Street Store Food",
+            category: "Street",
+            image: "assets/images/taiwanese-beef-noodles-store.JPG",
+            device: "(Panasonic GF-10)"
         }
     ]
 };
