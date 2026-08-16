@@ -21,33 +21,33 @@ const siteData = {
     ],
     gallery: [
         {
-            title: "Hip-Hop Meets Modernity, Stillness Meets Motion",
+            title: "Hard Working",
             category: "Street",
-            image: "assets/images/geographic-photo-work.jpg",
-            device: "(Insta360 Luna Ultra)"
-        },
-        {
-            title: "Revisit Old Haunts",
-            category: "Landscape",
-            image: "assets/images/revisit-old-haunts.JPEG",
-            device: "(Insta360 Luna Ultra)"
-        },
-        {
-            title: "Ship wave cut the sea",
-            category: "Landscape",
-            image: "assets/images/sea.jpg",
-            device: "(Apple IPhone 16)"
-        },
-        {
-            title: "Passing train",     
-            category: "Street",
-            image: "assets/images/train.JPG",
+            image: "assets/images/Hard-Working.jpg",
             device: "(Panasonic GF-10)"
         },
         {
-            title: "Taiwanese Style Street Store Food",
+            title: "Taiwanese Street",
             category: "Street",
-            image: "assets/images/taiwanese-beef-noodles-store.JPG",
+            image: "assets/images/Taiwanese-Street.jpg",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Leaves Leave",
+            category: "Street",
+            image: "assets/images/Leaves-Leave.jpg",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Huge Building",     
+            category: "Street",
+            image: "assets/images/Huge-Building.JPG",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Two-Cats",
+            category: "Animals",
+            image: "assets/images/Two-Cats.JPG",
             device: "(Panasonic GF-10)"
         }
     ]
