@@ -41,13 +41,13 @@ const siteData = {
         {
             title: "Huge Building",     
             category: "Street",
-            image: "assets/images/Huge-Building.JPG",
+            image: "assets/images/Huge-Building.jpg",
             device: "(Panasonic GF-10)"
         },
         {
             title: "Two-Cats",
             category: "Animals",
-            image: "assets/images/Two-Cats.JPG",
+            image: "assets/images/Two-Cats.jpg",
             device: "(Panasonic GF-10)"
         }
     ]
