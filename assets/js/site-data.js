@@ -33,21 +33,27 @@ const siteData = {
             device: "(Panasonic GF-10)"
         },
         {
-            title: "Leaves Leave",
-            category: "Street",
-            image: "assets/images/Leaves-Leave.jpg",
-            device: "(Panasonic GF-10)"
-        },
-        {
             title: "Huge Building",     
             category: "Street",
             image: "assets/images/Huge-Building.jpg",
             device: "(Panasonic GF-10)"
         },
         {
-            title: "Two-Cats",
+            title: "Two Cats",
             category: "Animals",
             image: "assets/images/Two-Cats.jpg",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Cleaning Labor",
+            category: "Street",
+            image: "assets/images/cleaning-labor.jpg",
+            device: "(Panasonic GF-10)"
+        },
+        {
+            title: "Three Colors, A Family",
+            category: "Street",
+            image: "assets/images/Three-Colors-A-Family.jpg",
             device: "(Panasonic GF-10)"
         }
     ]
